@@ -1,0 +1,70 @@
+body {
+    /* background-color: blue; */
+    font-size: 32px;
+    margin: 0;
+}
+
+.parent {
+    background: blue;
+    height: 60vh;
+    padding: 16px;
+    /* padding can take 1 to 4 values */
+    /* padding: top left bottom right */
+
+    /* flex */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent > div {
+    background: grey;
+    margin: 0px;
+    width: 80px;
+    height: 80px;
+
+    /* flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent > div:nth-child(even) {
+    background-color: red;
+}
+
+.item-2 {
+    align-self: flex-start;
+}
+
+.item-6 {
+    align-self: flex-end;
+}
+
+/* overridding order */
+.item-1 {
+    order: 1;
+}
+
+.item-7 {
+    order: 2;
+}
+
+.item-5 {
+    order: -1;
+}
+
+.item-6 {
+    order: -2;
+}
+
+.item-4 {
+    flex-grow: 1;
+}
+
+.item-2 {
+    flex-grow: 2;
+}
